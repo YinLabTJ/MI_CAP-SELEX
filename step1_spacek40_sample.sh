@@ -1,0 +1,14 @@
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TGGGTG40NGGA0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TGGGTG40NGGAKN3u_sig.seq 6 6 1 > spacek40_out/6mer/ATF4.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TGGGTG40NGGA0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TGGGTG40NGGAKN3u_sig.seq 8 8 1 > spacek40_out/8mer/ATF4.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TGACCA40NTCC0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TGACCA40NTCCKN3u_sig.seq 6 6 1 > spacek40_out/6mer/CEBPD.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TGACCA40NTCC0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TGACCA40NTCCKN3u_sig.seq 8 8 1 > spacek40_out/8mer/CEBPD.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TCGCCG40NTGC0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TCGCCG40NTGCKO3u_sig.seq 6 6 1 > spacek40_out/6mer/FOXD2.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TCGCCG40NTGC0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TCGCCG40NTGCKO3u_sig.seq 8 8 1 > spacek40_out/8mer/FOXD2.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TTTGTA40NTCC0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TTTGTA40NTCCKS3u_sig.seq 6 6 1 > spacek40_out/6mer/GLIS1.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TTTGTA40NTCC0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TTTGTA40NTCCKS3u_sig.seq 8 8 1 > spacek40_out/8mer/GLIS1.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TCTTGG40NTTA0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TCTTGG40NTTAKO3u_sig.seq 6 6 1 > spacek40_out/6mer/HES2.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TCTTGG40NTTA0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TCTTGG40NTTAKO3u_sig.seq 8 8 1 > spacek40_out/8mer/HES2.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TGCTCC40NCCG0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TGCTCC40NCCGKT3u_sig.seq 6 6 1 > spacek40_out/6mer/NR4A2.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TGCTCC40NCCG0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TGCTCC40NCCGKT3u_sig.seq 8 8 1 > spacek40_out/8mer/NR4A2.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TACCCT40NTTA0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TACCCT40NTTAKV3u_sig.seq 6 6 1 > spacek40_out/6mer/ZBED1.out
+spacek40 -40N -nogaps /data/software/MI/upload_pipeline/SELEX/TACCCT40NTTA0u_sig.seq /data/software/MI/upload_pipeline/SELEX/TACCCT40NTTAKV3u_sig.seq 8 8 1 > spacek40_out/8mer/ZBED1.out
