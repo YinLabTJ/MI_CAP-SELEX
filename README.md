@@ -11,7 +11,6 @@ export PERLLIB="$PERLLIB:/data/software/MI_CAP-SELEX/script" #add script path to
 To run this pipeline, please refer to run_MI_example.sh:
 bash run_MI_example.sh Batch_test.txt SELEX
 
-the output tables and figures should be in output/MI_figures/
 =======
 Dependencies:
 
@@ -24,6 +23,6 @@ Examples of analysis workflow:
 4. You can use Batch_test.txt and SELEX/*.seq as demo data and directly run pipeline.sh, it will take about 60 minutes to finish the pipeline.
 
 Expected output:
-SVG files of each pair of Transcription Factors drawing MI matrix and other information, in directory 'output/Huddinge_final' .
+SVG files of each pair of Transcription Factors drawing MI matrix and other information, in directory 'output/MI_figures' .
  
 >>>>>>> 213e9825110fbf5f67ccdea5f07059035490880a
