@@ -10,7 +10,7 @@ then
 	echo "usage: bash run_MI_example.sh batch_file seq_file_dir"
 	exit
 fi
-export PATH="$PATH:/data/software/relative_affinity/upload_pipeline"
+#export PATH="$PATH:/data/software/MI_CAP-SELEX"
 
 #1. run spacek40 
 perl script/step1_spacek40.pl $1 $2
