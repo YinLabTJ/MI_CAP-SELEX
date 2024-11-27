@@ -7,7 +7,7 @@
 	<polygon points="390,622 390,638 410,630" style="fill:black;stroke:black;stroke-width:1" />
 	<text fill="black" font-size="10" stroke="black" style="stroke-width:0" x="435" y="590">-4</text>
 	<rect fill="rgb(24.6958194421401,193.34083596608,249.850160874625)" height="20" opacity="1" width="20" x="430" y="600" />
-	<rect fill="rgb(42.5742912864129,195.035477847053,246.121948736483)" height="20" opacity="1" width="20" x="430" y="620" />
+	<rect fill="rgb(42.5742912864128,195.035477847053,246.121948736483)" height="20" opacity="1" width="20" x="430" y="620" />
 	<text fill="black" font-size="10" stroke="black" style="stroke-width:0" x="455" y="590">-3</text>
 	<rect fill="rgb(211,211,211)" height="20" opacity="1" width="20" x="450" y="600" />
 	<rect fill="rgb(173.637401710054,207.458521489105,218.79125272397)" height="20" opacity="1" width="20" x="450" y="620" />
@@ -64,7 +64,7 @@
 	<rect fill="rgb(200.015743819779,209.958838276756,213.290555791136)" height="20" opacity="1" width="20" x="790" y="620" />
 	<text fill="black" font-size="10" stroke="black" style="stroke-width:0" x="815" y="590">15</text>
 	<rect fill="rgb(184.379894987132,208.476767297358,216.551111945811)" height="20" opacity="1" width="20" x="810" y="600" />
-	<rect fill="rgb(196.598474694296,209.634926511308,214.003161675123)" height="20" opacity="1" width="20" x="810" y="620" />
+	<rect fill="rgb(196.598474694297,209.634926511308,214.003161675123)" height="20" opacity="1" width="20" x="810" y="620" />
 	<text fill="black" font-size="10" stroke="black" style="stroke-width:0" x="835" y="590">16</text>
 	<rect fill="rgb(188.67124823974,208.883530638838,215.656232594557)" height="20" opacity="1" width="20" x="830" y="600" />
 	<rect fill="rgb(152.369349640562,205.442592382992,223.226296757418)" height="20" opacity="1" width="20" x="830" y="620" />

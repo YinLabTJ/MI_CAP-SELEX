@@ -10,6 +10,10 @@ my ($vol,$shdir,$file)=File::Spec->splitpath($cwd);
 
 my $seq_file_dir=shift;
 
+my $datestring = localtime();
+print "4-mer frequncy counting start at $datestring\n";
+
+
 open IN,"output/filter_list";
 `mkdir -p output`;
 open OUT,">output/step6.sh";
@@ -67,15 +71,24 @@ while(<IN>){
 		
 		my @t81=split /,/,$t[2];
 		my @t82=split /,/,$t[3];
+		print "$t[0] : counting 4-mer pairs frequency...\n";
 		foreach my $t81(@t81){
 			foreach my $t82(@t82){
 				print OUT "perl $dir/script/step6_MI_heatmap_drawing.pl $seqfile $t81\_$t82 $t[0] $t[2]\_$t[3] 8 4 $dir/output/$t[0]\_$t2[0] tf_pair 1 > $dir/output/MI_figures/$t[0]\_$t2[0]/$t81\_$t82.svg\n";
-				
+				print OUT "perl $dir/script/step6_MI_heatmap_drawing.pl $tf1 $t81\_$t82 $t[0] $t[2]\_$t[3] 8 4 $dir/output/$t[0]\_$t2[0] tf1 1 > $dir/output/MI_figures/$t[0]\_$t2[0]/$t81\_$t82.tf1.svg\n";
+				print OUT "perl $dir/script/step6_MI_heatmap_drawing.pl $tf2 $t81\_$t82 $t[0] $t[2]\_$t[3] 8 4 $dir/output/$t[0]\_$t2[0] tf2 1 > $dir/output/MI_figures/$t[0]\_$t2[0]/$t81\_$t82.tf2.svg\n";
 
+				
 				print OUT "perl $dir/script/step6_MI_heatmap_drawing_shift.pl $seqfile $t81\_$t82 $t[0] $t[2]\_$t[3] 7 4 $dir/output/$t[0]\_$t2[0] tf_pair 1 > $dir/output/MI_figures/$t[0]\_$t2[0]/$t81\_$t82.shift.svg\n";
+				print OUT "perl $dir/script/step6_MI_heatmap_drawing_shift.pl $tf1 $t81\_$t82 $t[0] $t[2]\_$t[3] 7 4 $dir/output/$t[0]\_$t2[0] tf1 1 >  $dir/output/MI_figures/$t[0]\_$t2[0]/$t81\_$t82.shift.tf1.svg\n";
+				print OUT "perl $dir/script/step6_MI_heatmap_drawing_shift.pl $tf2 $t81\_$t82 $t[0] $t[2]\_$t[3] 7 4 $dir/output/$t[0]\_$t2[0] tf2 1 >  $dir/output/MI_figures/$t[0]\_$t2[0]/$t81\_$t82.shift.tf2.svg\n";
+				print OUT "perl $dir/script/step6_remove_enriched-4mer-pairs_in_individual_TF.pl $dir/output/$t[0]\_$t2[0]/MI.$t[0].$t81\_$t82.tf_pair.shift.xls $dir/output/$t[0]\_$t2[0]/MI.$t[0].$t81\_$t82.tf1.shift.xls $dir/output/$t[0]\_$t2[0]/MI.$t[0].$t81\_$t82.tf2.shift.xls $t81\_$t82 $t[0] $t[2]\_$t[3] 7 4 $dir/output/$t[0]\_$t2[0] $dir/output/$t[0]\_$t2[0]/MI.$t[0].$t81\_$t82.tf_pair-tf1-tf2.shift.xls > $dir/output/MI_figures/$t[0]\_$t2[0]/$t81\_$t82.tf_pair-tf1-tf2.shift.svg\n";
 			}
 		}
+		print "$t[0] : 4-mer pairs frequency counted.\n";
 	}
 }
 close IN;
 close OUT;
+$datestring = localtime();
+print "4-mer frequncy counting finish at $datestring\n";

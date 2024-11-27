@@ -5,9 +5,9 @@
 # You can take "Batch_test.txt" and folder “SELEX" as an example
 
 
-if [ $# != 2 ];
+if [[ $# != 2 ]] && [[ $# != 3 ]];
 then
-	echo "usage: bash run_MI_example.sh batch_file seq_file_dir"
+	echo "usage: bash run_MI_example.sh batch_file seq_file_dir [filter_ind_TF_4mer]"
 	exit
 fi
 #export PATH="$PATH:/data/software/MI_CAP-SELEX"
@@ -29,6 +29,19 @@ perl script/step5.4-mer_frequency.pl $2
 
 #6. draw MI matrix
 bash output/step6.sh
+
+#Run step7 and step8 only when MI of TF pairs and individual TF were concentrated to same spacing
+if [[ $# == 3 ]] && [[ $3 -eq "filter_ind_TF_4mer" ]];
+then	
+	#7 compute spacings of top 5% MI signals 
+	perl script/step7_top5p_MI_signals.pl
+
+	#8 filter 4-mer from iniividual TF motifs
+	perl script/step8_filter_individual_TF_4-mer.pl Batch_test.txt SELEX
+	bash output/step8_top5p_no_more_than_5_spacing.sh
+	bash output/step8_top5p_no_more_than_5_spacing.shift.sh
+fi
+
 
 #remove temporary files
 bash script/clean.sh
