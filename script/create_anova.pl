@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 $wc=`wc -l x.forR.xls`;
 @t=split /\t/,$wc;
 exit if($t[0]==0);

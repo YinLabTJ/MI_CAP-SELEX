@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 $wc=`wc -l MI.tmp2.xls`;
 @t=split /\s/,$wc;
 $total=$t[0];

@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 use File::Spec;
 my $cwd=File::Spec->rel2abs(__FILE__);
 my ($vol,$shdir,$file)=File::Spec->splitpath($cwd);

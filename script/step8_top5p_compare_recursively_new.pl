@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 $MI1=shift; $MI2=shift; $distance_file=shift; $check_file=shift; $lkmer=shift; $s1dir=shift;
 open MI,"$MI1"; open OUT,">$s1dir/tmp1.$lkmer";
 <MI>;

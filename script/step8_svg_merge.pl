@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 my $svg=shift; my $output=shift;
 my @files=split/,/,$svg;
 my $x_whole=0; my $y_whole=0;

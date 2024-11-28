@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 $dir=shift; $infile=shift; $already_filter=shift;
 open IN,"$infile";
 while(<IN>){

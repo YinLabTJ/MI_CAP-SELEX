@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 use strict;
 use Cwd;
 use File::Spec;
@@ -11,7 +12,7 @@ my ($vol,$shdir,$file)=File::Spec->splitpath($cwd);
 my $seq_file_dir=shift;
 
 my $datestring = localtime();
-print "4-mer frequncy counting start at $datestring\n";
+print "4-mer frequency counting start at $datestring\n";
 
 
 open IN,"output/filter_list";
@@ -91,4 +92,4 @@ while(<IN>){
 close IN;
 close OUT;
 $datestring = localtime();
-print "4-mer frequncy counting finish at $datestring\n";
+print "4-mer frequency counting finish at $datestring\n";

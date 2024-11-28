@@ -1,7 +1,8 @@
+#!/usr/bin/perl
 use Cwd;
 use SVG;
 use File::Spec;
-use MI; # /etc/perl/MI.pm Hudding distance模块
+use MI; # /etc/perl/MI.pm
 my $svg=SVG->new('width',1000,'height',1000);
 my $dir=cwd;
 $seq=shift; $pair_8=shift; $tf_pair=shift; $pair_8s=shift; $lkmer=shift; $skmer=shift; $s1dir=shift; $tf=shift; $draw_svg=shift;

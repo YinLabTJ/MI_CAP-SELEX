@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 use SVG;
 use MI; # /etc/perl/MI.pm
 use File::Spec;

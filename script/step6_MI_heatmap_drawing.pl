@@ -1,3 +1,4 @@
+#!/usr/bin/perl
 use Cwd;
 use SVG;
 use File::Spec;
